@@ -1,3 +1,51 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+  <div class="row gx-lg-5 align-items-center mb-5">
+    <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+      <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+        LETTER OF<br />
+        <span style="color: hsl(218, 81%, 75%)">RECOMMENDATION</span>
+      </h1>
+      <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+        Start your LOR Process
+      </p>
+    </div>
+
+    <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+      <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+      <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+      <div class="card bg-glass" style="margin-bottom:80px; margin-top: 50px;">
+        <div class="card-body px-4 py-5 px-md-5">
+          <form>
+            <div>
+                <h3 style="text-align: center; margin-bottom: 30px;">Login to your LOR Account</h3>
+            </div>
+            
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example3" style="float: left;"><h6>Email address:</h6></label>
+              <input type="email" id="form3Example3" class="form-control" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4" style="float: left;"><h6>Password:</h6></label>
+              <input type="password" id="form3Example4" class="form-control" />
+            </div>
 
 
-<h1>Hello <%=locals.name%></h1>
+            <!-- Submit button -->
+            <div style="text-align: center;">
+              <a class="btn btn-primary" href="Student_homepage.html">Login</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

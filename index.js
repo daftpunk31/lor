@@ -12,10 +12,9 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const name1 = "Sai Gautam";
 
 app.get("/", (req, res) => {
-  res.render("index.ejs", {name:name1});
+  res.render("index.ejs");
 });
 
 app.listen(port, () => {
